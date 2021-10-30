@@ -10,15 +10,15 @@ import cronapi.rest.security.CronappSecurity;
 
 
 /**
-* Classe que representa a tabela APPLICATION_USER
+* Classe que representa a tabela NIVELQUESTAO
 * @generated
 */
 @Entity
-@Table(name = "\"APPLICATION_USER\"")
+@Table(name = "\"NIVELQUESTAO\"")
 @XmlRootElement
 @CronappSecurity
-@JsonFilter("app.entity.ApplicationUser")
-public class ApplicationUser implements Serializable {
+@JsonFilter("app.entity.NivelQuestao")
+public class NivelQuestao implements Serializable {
 
     /**
     * UID da classe, necessário na serialização
@@ -36,24 +36,15 @@ public class ApplicationUser implements Serializable {
     /**
     * @generated
     */
-    @ManyToOne
-    @JoinColumn(name="application_id", nullable = true, referencedColumnName = "id", insertable=true, updatable=true, foreignKey = @ForeignKey(name = ""))
+    @Column(name = "nivel", nullable = true, unique = false, insertable=true, updatable=true)
         
-        private Application application;
-
-    /**
-    * @generated
-    */
-    @ManyToOne
-    @JoinColumn(name="user_id", nullable = true, referencedColumnName = "id", insertable=true, updatable=true, foreignKey = @ForeignKey(name = ""))
-        
-        private User user;
+        private java.lang.String nivel;
 
     /**
     * Construtor
     * @generated
     */
-    public ApplicationUser(){
+    public NivelQuestao(){
     }
 
     /**
@@ -71,46 +62,27 @@ public class ApplicationUser implements Serializable {
     * @param id id
     * @generated
     */
-    public ApplicationUser setId(java.lang.String id){
+    public NivelQuestao setId(java.lang.String id){
         this.id = id;
         return this;
     }
     /**
-    * Obtém application
-    * return application
+    * Obtém nivel
+    * return nivel
     * @generated
     */
     
-    public Application getApplication(){
-        return this.application;
+    public java.lang.String getNivel(){
+        return this.nivel;
     }
 
     /**
-    * Define application
-    * @param application application
+    * Define nivel
+    * @param nivel nivel
     * @generated
     */
-    public ApplicationUser setApplication(Application application){
-        this.application = application;
-        return this;
-    }
-    /**
-    * Obtém user
-    * return user
-    * @generated
-    */
-    
-    public User getUser(){
-        return this.user;
-    }
-
-    /**
-    * Define user
-    * @param user user
-    * @generated
-    */
-    public ApplicationUser setUser(User user){
-        this.user = user;
+    public NivelQuestao setNivel(java.lang.String nivel){
+        this.nivel = nivel;
         return this;
     }
 
@@ -121,7 +93,7 @@ public class ApplicationUser implements Serializable {
     public boolean equals(Object obj) {
         if (this == obj) return true;
         if (obj == null || getClass() != obj.getClass()) return false;
-ApplicationUser object = (ApplicationUser)obj;
+NivelQuestao object = (NivelQuestao)obj;
         if (id != null ? !id.equals(object.id) : object.id != null) return false;
         return true;
     }

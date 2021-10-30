@@ -1,0 +1,81 @@
+{
+  "customId": "comboDisciplinas",
+  "queryName": "comboDisciplinas",
+  "sourceType": "entityFullName",
+  "baseEntity": null,
+  "blockly": null,
+  "entitySimpleName": "Disciplina",
+  "entityFullName": "app.entity.Disciplina",
+  "query": {
+    "isValid": true,
+    "rulesEntity": [
+      {
+        "entity": "Disciplina",
+        "alias": "d",
+        "namespace": "app.entity.Disciplina"
+      }
+    ],
+    "rulesSelect": [
+      {
+        "func": "get",
+        "field": "d"
+      }
+    ],
+    "rulesGroupBy": [],
+    "rulesHaving": [],
+    "rulesOrderBy": [],
+    "rules": {
+      "condition": "AND",
+      "not": false,
+      "valid": true,
+      "rules": []
+    }
+  },
+  "queryParamsValues": [],
+  "verbs": {
+    "GET": true,
+    "GETAuthorities": null,
+    "POST": true,
+    "POSTAuthorities": null,
+    "PUT": true,
+    "PUTAuthorities": null,
+    "DELETE": true,
+    "DELETEAuthorities": null,
+    "FILTER": true,
+    "FILTERAuthorities": null,
+    "COUNT": true,
+    "COUNTAuthorities": null
+  },
+  "events": {
+    "beforeInsert": null,
+    "beforeUpdate": null,
+    "beforeDelete": null,
+    "afterInsert": null,
+    "afterUpdate": null,
+    "afterDelete": null,
+    "onNavigate": null,
+    "onError": null
+  },
+  "defaultValues": {
+    "id": null,
+    "nomeDisciplina": null
+  },
+  "defaultValuesProperties": {
+    "id": null,
+    "nomeDisciplina": null
+  },
+  "security": {
+    "id": null,
+    "nomeDisciplina": null
+  },
+  "calcFields": {},
+  "calcFieldsSecurity": {},
+  "calcFieldsProperties": {},
+  "headers": {},
+  "errorHandles": {
+    "primaryKey": null,
+    "foreignKey": null
+  },
+  "serviceUrl": "api/cronapi/odata/v2/app/query600866/",
+  "audit": false
+}

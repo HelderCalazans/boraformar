@@ -10,15 +10,15 @@ import cronapi.rest.security.CronappSecurity;
 
 
 /**
-* Classe que representa a tabela APPLICATION_USER
+* Classe que representa a tabela QUESTAODAPROVA
 * @generated
 */
 @Entity
-@Table(name = "\"APPLICATION_USER\"")
+@Table(name = "\"QUESTAODAPROVA\"")
 @XmlRootElement
 @CronappSecurity
-@JsonFilter("app.entity.ApplicationUser")
-public class ApplicationUser implements Serializable {
+@JsonFilter("app.entity.QuestaoDaProva")
+public class QuestaoDaProva implements Serializable {
 
     /**
     * UID da classe, necessário na serialização
@@ -37,23 +37,23 @@ public class ApplicationUser implements Serializable {
     * @generated
     */
     @ManyToOne
-    @JoinColumn(name="application_id", nullable = true, referencedColumnName = "id", insertable=true, updatable=true, foreignKey = @ForeignKey(name = ""))
+    @JoinColumn(name="fk_prova", nullable = true, referencedColumnName = "codProva", insertable=true, updatable=true, foreignKey = @ForeignKey(name = ""))
         
-        private Application application;
+        private Prova prova;
 
     /**
     * @generated
     */
     @ManyToOne
-    @JoinColumn(name="user_id", nullable = true, referencedColumnName = "id", insertable=true, updatable=true, foreignKey = @ForeignKey(name = ""))
+    @JoinColumn(name="fk_questao", nullable = true, referencedColumnName = "id", insertable=true, updatable=true, foreignKey = @ForeignKey(name = ""))
         
-        private User user;
+        private Questao questao;
 
     /**
     * Construtor
     * @generated
     */
-    public ApplicationUser(){
+    public QuestaoDaProva(){
     }
 
     /**
@@ -71,46 +71,46 @@ public class ApplicationUser implements Serializable {
     * @param id id
     * @generated
     */
-    public ApplicationUser setId(java.lang.String id){
+    public QuestaoDaProva setId(java.lang.String id){
         this.id = id;
         return this;
     }
     /**
-    * Obtém application
-    * return application
+    * Obtém prova
+    * return prova
     * @generated
     */
     
-    public Application getApplication(){
-        return this.application;
+    public Prova getProva(){
+        return this.prova;
     }
 
     /**
-    * Define application
-    * @param application application
+    * Define prova
+    * @param prova prova
     * @generated
     */
-    public ApplicationUser setApplication(Application application){
-        this.application = application;
+    public QuestaoDaProva setProva(Prova prova){
+        this.prova = prova;
         return this;
     }
     /**
-    * Obtém user
-    * return user
+    * Obtém questao
+    * return questao
     * @generated
     */
     
-    public User getUser(){
-        return this.user;
+    public Questao getQuestao(){
+        return this.questao;
     }
 
     /**
-    * Define user
-    * @param user user
+    * Define questao
+    * @param questao questao
     * @generated
     */
-    public ApplicationUser setUser(User user){
-        this.user = user;
+    public QuestaoDaProva setQuestao(Questao questao){
+        this.questao = questao;
         return this;
     }
 
@@ -121,7 +121,7 @@ public class ApplicationUser implements Serializable {
     public boolean equals(Object obj) {
         if (this == obj) return true;
         if (obj == null || getClass() != obj.getClass()) return false;
-ApplicationUser object = (ApplicationUser)obj;
+QuestaoDaProva object = (QuestaoDaProva)obj;
         if (id != null ? !id.equals(object.id) : object.id != null) return false;
         return true;
     }

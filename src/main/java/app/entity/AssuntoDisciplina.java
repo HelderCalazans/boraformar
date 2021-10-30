@@ -10,15 +10,15 @@ import cronapi.rest.security.CronappSecurity;
 
 
 /**
-* Classe que representa a tabela APPLICATION_USER
+* Classe que representa a tabela ASSUNTODISCIPLINA
 * @generated
 */
 @Entity
-@Table(name = "\"APPLICATION_USER\"")
+@Table(name = "\"ASSUNTODISCIPLINA\"")
 @XmlRootElement
 @CronappSecurity
-@JsonFilter("app.entity.ApplicationUser")
-public class ApplicationUser implements Serializable {
+@JsonFilter("app.entity.AssuntoDisciplina")
+public class AssuntoDisciplina implements Serializable {
 
     /**
     * UID da classe, necessário na serialização
@@ -36,24 +36,23 @@ public class ApplicationUser implements Serializable {
     /**
     * @generated
     */
-    @ManyToOne
-    @JoinColumn(name="application_id", nullable = true, referencedColumnName = "id", insertable=true, updatable=true, foreignKey = @ForeignKey(name = ""))
+    @Column(name = "AssuntoDisciplina", nullable = true, unique = false, insertable=true, updatable=true)
         
-        private Application application;
+        private java.lang.String assuntoDisciplina;
 
     /**
     * @generated
     */
     @ManyToOne
-    @JoinColumn(name="user_id", nullable = true, referencedColumnName = "id", insertable=true, updatable=true, foreignKey = @ForeignKey(name = ""))
+    @JoinColumn(name="fk_disciplina", nullable = true, referencedColumnName = "id", insertable=true, updatable=true, foreignKey = @ForeignKey(name = ""))
         
-        private User user;
+        private Disciplina disciplina;
 
     /**
     * Construtor
     * @generated
     */
-    public ApplicationUser(){
+    public AssuntoDisciplina(){
     }
 
     /**
@@ -71,46 +70,46 @@ public class ApplicationUser implements Serializable {
     * @param id id
     * @generated
     */
-    public ApplicationUser setId(java.lang.String id){
+    public AssuntoDisciplina setId(java.lang.String id){
         this.id = id;
         return this;
     }
     /**
-    * Obtém application
-    * return application
+    * Obtém assuntoDisciplina
+    * return assuntoDisciplina
     * @generated
     */
     
-    public Application getApplication(){
-        return this.application;
+    public java.lang.String getAssuntoDisciplina(){
+        return this.assuntoDisciplina;
     }
 
     /**
-    * Define application
-    * @param application application
+    * Define assuntoDisciplina
+    * @param assuntoDisciplina assuntoDisciplina
     * @generated
     */
-    public ApplicationUser setApplication(Application application){
-        this.application = application;
+    public AssuntoDisciplina setAssuntoDisciplina(java.lang.String assuntoDisciplina){
+        this.assuntoDisciplina = assuntoDisciplina;
         return this;
     }
     /**
-    * Obtém user
-    * return user
+    * Obtém disciplina
+    * return disciplina
     * @generated
     */
     
-    public User getUser(){
-        return this.user;
+    public Disciplina getDisciplina(){
+        return this.disciplina;
     }
 
     /**
-    * Define user
-    * @param user user
+    * Define disciplina
+    * @param disciplina disciplina
     * @generated
     */
-    public ApplicationUser setUser(User user){
-        this.user = user;
+    public AssuntoDisciplina setDisciplina(Disciplina disciplina){
+        this.disciplina = disciplina;
         return this;
     }
 
@@ -121,7 +120,7 @@ public class ApplicationUser implements Serializable {
     public boolean equals(Object obj) {
         if (this == obj) return true;
         if (obj == null || getClass() != obj.getClass()) return false;
-ApplicationUser object = (ApplicationUser)obj;
+AssuntoDisciplina object = (AssuntoDisciplina)obj;
         if (id != null ? !id.equals(object.id) : object.id != null) return false;
         return true;
     }
