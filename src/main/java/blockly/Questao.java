@@ -86,11 +86,11 @@ public static Var verificaCadastroQuestaoCorreta() throws Exception {
             cronapi.util.Operations.callClientFunction(Var.valueOf("cronapi.screen.changeValueOfField"),
             Var.valueOf("Questao.active.respostaCorreta"),
             cronapi.screen.Operations.getValueOfField(
-            Var.valueOf("vars.opt1")));
+            Var.valueOf("Questao.active.resposta1")));
 
             System.out.println(
             cronapi.screen.Operations.getValueOfField(
-            Var.valueOf("vars.opt1")).getObjectAsString());
+            Var.valueOf("Questao.active.resposta1")).getObjectAsString());
         } else if (
         Var.valueOf(
         cronapi.screen.Operations.getValueOfField(
@@ -100,11 +100,11 @@ public static Var verificaCadastroQuestaoCorreta() throws Exception {
             cronapi.util.Operations.callClientFunction(Var.valueOf("cronapi.screen.changeValueOfField"),
             Var.valueOf("Questao.active.respostaCorreta"),
             cronapi.screen.Operations.getValueOfField(
-            Var.valueOf("vars.opt2")));
+            Var.valueOf("Questao.active.resposta2")));
 
             System.out.println(
             cronapi.screen.Operations.getValueOfField(
-            Var.valueOf("vars.opt2")).getObjectAsString());
+            Var.valueOf("Questao.active.resposta2")).getObjectAsString());
         } else if (
         Var.valueOf(
         cronapi.screen.Operations.getValueOfField(
@@ -114,21 +114,21 @@ public static Var verificaCadastroQuestaoCorreta() throws Exception {
             cronapi.util.Operations.callClientFunction(Var.valueOf("cronapi.screen.changeValueOfField"),
             Var.valueOf("Questao.active.respostaCorreta"),
             cronapi.screen.Operations.getValueOfField(
-            Var.valueOf("vars.opt3")));
+            Var.valueOf("Questao.active.resposta3")));
 
             System.out.println(
             cronapi.screen.Operations.getValueOfField(
-            Var.valueOf("vars.opt3")).getObjectAsString());
+            Var.valueOf("Questao.active.resposta3")).getObjectAsString());
         } else {
 
             cronapi.util.Operations.callClientFunction(Var.valueOf("cronapi.screen.changeValueOfField"),
             Var.valueOf("Questao.active.respostaCorreta"),
             cronapi.screen.Operations.getValueOfField(
-            Var.valueOf("vars.opt4")));
+            Var.valueOf("Questao.active.resposta4")));
 
             System.out.println(
             cronapi.screen.Operations.getValueOfField(
-            Var.valueOf("vars.opt4")).getObjectAsString());
+            Var.valueOf("Questao.active.resposta4")).getObjectAsString());
         }
     } else if (
     Var.valueOf(contador.compareTo(
