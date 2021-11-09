@@ -7,7 +7,6 @@
       "chkApi": false,
       "dataSource": "jdbc/main",
       "disableCache": true,
-      "generationType": "drop-and-create-tables",
       "id": "paperCell",
       "namespace": "app",
       "position": {
