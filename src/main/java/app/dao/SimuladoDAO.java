@@ -17,8 +17,8 @@ import org.springframework.transaction.annotation.*;
  * 
  * @generated
  */
-@Repository("DisciplinaDAO")
+@Repository("SimuladoDAO")
 @Transactional(transactionManager="app-TransactionManager")
-public interface DisciplinaDAO extends JpaRepository<Disciplina, java.lang.String> {
+public interface SimuladoDAO extends JpaRepository<Simulado, java.lang.String> {
 
 }
