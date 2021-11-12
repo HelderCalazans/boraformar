@@ -30,6 +30,18 @@ public static Var gerarSimuladoAleatorio(@ParamMetaData(description = "assunto1"
    private Var idQuestao = Var.VAR_NULL;
    private Var listaAssunto2 = Var.VAR_NULL;
    private Var listaAssunto3 = Var.VAR_NULL;
+   private Var idQ1 = Var.VAR_NULL;
+   private Var idQ2 = Var.VAR_NULL;
+   private Var idQ3 = Var.VAR_NULL;
+   private Var idQ4 = Var.VAR_NULL;
+   private Var idQ5 = Var.VAR_NULL;
+   private Var idQ6 = Var.VAR_NULL;
+   private Var idQ7 = Var.VAR_NULL;
+   private Var idQ8 = Var.VAR_NULL;
+   private Var idQ9 = Var.VAR_NULL;
+   private Var idQ10 = Var.VAR_NULL;
+   private Var creator = Var.VAR_NULL;
+   private Var exception = Var.VAR_NULL;
 
    public Var call() throws Exception {
 
@@ -179,15 +191,71 @@ public static Var gerarSimuladoAleatorio(@ParamMetaData(description = "assunto1"
         }
 
         System.out.println(
-        Var.valueOf("=================================================================").getObjectAsString());
+        Var.valueOf("====================== LISTA DE IDS DE QUESTÕES").getObjectAsString());
 
         System.out.println(listaIdsQuestoes.getObjectAsString());
 
-        System.out.println(
-        cronapi.list.Operations.size(listaIdsQuestoes).getObjectAsString());
+        idQ1 =
+        cronapi.list.Operations.getAndRemoveLast(listaIdsQuestoes);
 
-        cronapi.util.Operations.callClientFunction( Var.valueOf("cronapi.screen.notify"), Var.valueOf("success"),
-        Var.valueOf("Simulado gerado com sucesso"));
+        idQ2 =
+        cronapi.list.Operations.getAndRemoveLast(listaIdsQuestoes);
+
+        idQ3 =
+        cronapi.list.Operations.getAndRemoveLast(listaIdsQuestoes);
+
+        idQ4 =
+        cronapi.list.Operations.getAndRemoveLast(listaIdsQuestoes);
+
+        idQ5 =
+        cronapi.list.Operations.getAndRemoveLast(listaIdsQuestoes);
+
+        idQ6 =
+        cronapi.list.Operations.getAndRemoveLast(listaIdsQuestoes);
+
+        idQ7 =
+        cronapi.list.Operations.getAndRemoveLast(listaIdsQuestoes);
+
+        idQ8 =
+        cronapi.list.Operations.getAndRemoveLast(listaIdsQuestoes);
+
+        idQ9 =
+        cronapi.list.Operations.getAndRemoveLast(listaIdsQuestoes);
+
+        idQ10 =
+        cronapi.list.Operations.getAndRemoveLast(listaIdsQuestoes);
+
+        try {
+
+            creator =
+            cronapi.list.Operations.getLast((
+            cronapi.database.Operations.query(Var.valueOf("app.entity.User"),Var.valueOf("select u.id from User u where u.userName = :userName"),Var.valueOf("userName",
+            cronapi.util.Operations.getCurrentUserName()))));
+
+            cronapi.database.Operations.beginTransaction(Var.valueOf("app.entity.Simulado"));
+
+            cronapi.database.Operations.insert(Var.valueOf("app.entity.Simulado"),Var.valueOf("quest6",idQ6),Var.valueOf("quest7",idQ7),Var.valueOf("quest8",idQ8),Var.valueOf("quest9",idQ9),Var.valueOf("quest2",idQ2),Var.valueOf("quest3",idQ3),Var.valueOf("criador",creator),Var.valueOf("quest4",idQ4),Var.valueOf("quest5",idQ5),Var.valueOf("quest10",idQ10),Var.valueOf("compCod",
+            cronapi.util.Operations.random(
+            Var.valueOf(100000))),Var.valueOf("id",
+            cronapi.util.Operations.generateUUID()),Var.valueOf("quest1",idQ1));
+
+            cronapi.database.Operations.commitTransaction(Var.valueOf("app.entity.Simulado"));
+         } catch (Exception exception_exception) {
+              exception = Var.valueOf(exception_exception);
+
+            cronapi.util.Operations.callClientFunction( Var.valueOf("cronapi.screen.notify"), Var.valueOf("error"), exception);
+         } finally {
+
+            cronapi.util.Operations.callClientFunction( Var.valueOf("cronapi.screen.notify"), Var.valueOf("success"),
+            Var.valueOf("Simulado gerado com sucesso"));
+
+            cronapi.util.Operations.callClientFunction(Var.valueOf("cronapi.screen.hideModal"),
+            Var.valueOf("gerarProvaAleatoria"));
+
+            cronapi.util.Operations.callClientFunction(Var.valueOf("cronapi.screen.refreshDatasource"),
+            Var.valueOf("Simulado"),
+            Var.valueOf("true"));
+        }
     }
     return Var.VAR_NULL;
    }
