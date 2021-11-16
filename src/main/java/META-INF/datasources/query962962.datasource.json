@@ -1,0 +1,166 @@
+{
+  "customId": "MeusSimulados",
+  "queryName": "MeusSimulados",
+  "sourceType": "entityFullName",
+  "baseEntity": null,
+  "blockly": null,
+  "entitySimpleName": "Simulado",
+  "entityFullName": "app.entity.Simulado",
+  "query": {
+    "isValid": true,
+    "isEmpty": false,
+    "operationType": "object",
+    "type": "select",
+    "rulesEntity": [
+      {
+        "entity": "Simulado",
+        "namespace": "app.entity.Simulado",
+        "alias": "s"
+      }
+    ],
+    "rulesSelect": [
+      {
+        "func": "get",
+        "field": "s",
+        "type": "string"
+      }
+    ],
+    "rulesGroupBy": [],
+    "rulesHaving": [],
+    "rulesOrderBy": [],
+    "rules": {
+      "condition": "AND",
+      "rules": [
+        {
+          "id": "s.criador",
+          "field": "s.criador",
+          "type": "string",
+          "input": "text",
+          "operator": "equal",
+          "value": ":criador",
+          "valueIsField": false
+        }
+      ],
+      "not": false,
+      "valid": true
+    },
+    "isRawSql": false,
+    "multiTenant": false,
+    "paginatorAutomatic": false,
+    "pagination": false
+  },
+  "queryParamsValues": [
+    {
+      "fieldName": "criador",
+      "fieldValue": {
+        "blocklyClass": "blockly.Util",
+        "blocklyMethod": "obterIdUsuarioLogado",
+        "blocklyLanguage": "java",
+        "blocklyParams": [
+          {
+            "name": "Entidade\u003capp.entity.Simulado\u003e",
+            "value": "data",
+            "type": "CUSTOM"
+          }
+        ],
+        "blocklyJson": {
+          "namespace": "blockly.Util",
+          "sourcePath": "src/main/java/blockly/Util.blockly",
+          "language": "java",
+          "class": "blockly.Util",
+          "methods": [
+            {
+              "name": "obterIdUsuarioLogado",
+              "hasReturn": "true",
+              "params": [
+                "Entidade\u003capp.entity.Simulado\u003e"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "verbs": {
+    "GET": true,
+    "GETAuthorities": null,
+    "POST": true,
+    "POSTAuthorities": null,
+    "PUT": true,
+    "PUTAuthorities": null,
+    "DELETE": true,
+    "DELETEAuthorities": null,
+    "FILTER": true,
+    "FILTERAuthorities": null,
+    "COUNT": true,
+    "COUNTAuthorities": null
+  },
+  "events": {
+    "beforeInsert": null,
+    "beforeUpdate": null,
+    "beforeDelete": null,
+    "afterInsert": null,
+    "afterUpdate": null,
+    "afterDelete": null,
+    "onNavigate": null,
+    "onError": null
+  },
+  "defaultValues": {
+    "id": null,
+    "compCod": null,
+    "quest1": null,
+    "quest2": null,
+    "quest3": null,
+    "quest4": null,
+    "quest5": null,
+    "quest6": null,
+    "quest7": null,
+    "quest8": null,
+    "quest9": null,
+    "quest10": null,
+    "criador": null,
+    "dtCriacao": null
+  },
+  "defaultValuesProperties": {
+    "id": null,
+    "compCod": null,
+    "quest1": null,
+    "quest2": null,
+    "quest3": null,
+    "quest4": null,
+    "quest5": null,
+    "quest6": null,
+    "quest7": null,
+    "quest8": null,
+    "quest9": null,
+    "quest10": null,
+    "criador": null,
+    "dtCriacao": null
+  },
+  "security": {
+    "id": null,
+    "compCod": null,
+    "quest1": null,
+    "quest2": null,
+    "quest3": null,
+    "quest4": null,
+    "quest5": null,
+    "quest6": null,
+    "quest7": null,
+    "quest8": null,
+    "quest9": null,
+    "quest10": null,
+    "criador": null,
+    "dtCriacao": null
+  },
+  "calcFields": {},
+  "calcFieldsSecurity": {},
+  "calcFieldsProperties": {},
+  "headers": {},
+  "errorHandles": {
+    "primaryKey": null,
+    "foreignKey": null
+  },
+  "serviceUrl": "api/cronapi/odata/v2/app/query962962/",
+  "audit": false
+}

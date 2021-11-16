@@ -1,4 +1,4 @@
-package blockly.Professor;
+package blockly.GeradoresSimulados;
 
 import cronapi.*;
 import cronapi.rest.security.CronappSecurity;

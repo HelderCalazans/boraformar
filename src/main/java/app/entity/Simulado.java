@@ -129,6 +129,14 @@ public class Simulado implements Serializable {
         private User criador;
 
     /**
+    * @generated
+    */
+    @Temporal(TemporalType.TIMESTAMP)
+    @Column(name = "dtCriacao", nullable = true, unique = false, insertable=true, updatable=true)
+        
+        private java.util.Date dtCriacao = Calendar.getInstance().getTime();
+
+    /**
     * Construtor
     * @generated
     */
@@ -380,6 +388,25 @@ public class Simulado implements Serializable {
     */
     public Simulado setCriador(User criador){
         this.criador = criador;
+        return this;
+    }
+    /**
+    * Obtém dtCriacao
+    * return dtCriacao
+    * @generated
+    */
+    
+    public java.util.Date getDtCriacao(){
+        return this.dtCriacao;
+    }
+
+    /**
+    * Define dtCriacao
+    * @param dtCriacao dtCriacao
+    * @generated
+    */
+    public Simulado setDtCriacao(java.util.Date dtCriacao){
+        this.dtCriacao = dtCriacao;
         return this;
     }
 
