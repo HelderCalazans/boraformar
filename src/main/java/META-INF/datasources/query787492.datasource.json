@@ -1,0 +1,375 @@
+{
+  "customId": "SimuladosParaResponder",
+  "queryName": "SimuladosParaResponder",
+  "sourceType": "entityFullName",
+  "baseEntity": null,
+  "blockly": null,
+  "entitySimpleName": "Simulado",
+  "entityFullName": "app.entity.Simulado",
+  "query": {
+    "isValid": true,
+    "isEmpty": false,
+    "operationType": "object",
+    "type": "select",
+    "rulesEntity": [
+      {
+        "entity": "Simulado",
+        "namespace": "app.entity.Simulado",
+        "alias": "s"
+      }
+    ],
+    "rulesSelect": [
+      {
+        "func": "get",
+        "field": "s",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "s.quest1.resposta1",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "s.quest1.resposta2",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "s.quest1.resposta3",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "s.quest1.resposta4",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "s.quest1.respostaCorreta",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "s.quest2.resposta1",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "s.quest2.resposta2",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "s.quest2.resposta3",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "s.quest2.resposta4",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "s.quest2.respostaCorreta",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "s.quest3.resposta1",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "s.quest3.resposta2",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "s.quest3.resposta3",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "s.quest3.resposta4",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "s.quest3.respostaCorreta",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "s.quest4.resposta1",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "s.quest4.resposta2",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "s.quest4.resposta3",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "s.quest4.resposta4",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "s.quest4.respostaCorreta",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "s.quest5.resposta1",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "s.quest5.resposta2",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "s.quest5.resposta3",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "s.quest5.resposta4",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "s.quest5.respostaCorreta",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "s.quest6.resposta1",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "s.quest6.resposta2",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "s.quest6.resposta3",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "s.quest6.resposta4",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "s.quest6.respostaCorreta",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "s.quest7.resposta1",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "s.quest7.resposta2",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "s.quest7.resposta3",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "s.quest7.resposta4",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "s.quest7.respostaCorreta",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "s.quest8.resposta1",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "s.quest8.resposta2",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "s.quest8.resposta3",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "s.quest8.resposta4",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "s.quest8.respostaCorreta",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "s.quest9.resposta1",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "s.quest9.resposta2",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "s.quest9.resposta3",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "s.quest9.resposta4",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "s.quest9.respostaCorreta",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "s.quest10.resposta1",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "s.quest10.resposta2",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "s.quest10.resposta3",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "s.quest10.resposta4",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "s.quest10.respostaCorreta",
+        "type": "string"
+      }
+    ],
+    "rulesGroupBy": [],
+    "rulesHaving": [],
+    "rulesOrderBy": [],
+    "rules": {
+      "condition": "AND",
+      "rules": [],
+      "not": false,
+      "valid": true
+    },
+    "isRawSql": false,
+    "multiTenant": false,
+    "paginatorAutomatic": false,
+    "pagination": false
+  },
+  "queryParamsValues": [],
+  "verbs": {
+    "GET": true,
+    "GETAuthorities": null,
+    "POST": true,
+    "POSTAuthorities": null,
+    "PUT": true,
+    "PUTAuthorities": null,
+    "DELETE": true,
+    "DELETEAuthorities": null,
+    "FILTER": true,
+    "FILTERAuthorities": null,
+    "COUNT": true,
+    "COUNTAuthorities": null
+  },
+  "events": {
+    "beforeInsert": null,
+    "beforeUpdate": null,
+    "beforeDelete": null,
+    "afterInsert": null,
+    "afterUpdate": null,
+    "afterDelete": null,
+    "onNavigate": null,
+    "onError": null
+  },
+  "defaultValues": {
+    "id": null,
+    "compCod": null,
+    "quest1": null,
+    "quest2": null,
+    "quest3": null,
+    "quest4": null,
+    "quest5": null,
+    "quest6": null,
+    "quest7": null,
+    "quest8": null,
+    "quest9": null,
+    "quest10": null,
+    "criador": null,
+    "dtCriacao": null
+  },
+  "defaultValuesProperties": {
+    "id": null,
+    "compCod": null,
+    "quest1": null,
+    "quest2": null,
+    "quest3": null,
+    "quest4": null,
+    "quest5": null,
+    "quest6": null,
+    "quest7": null,
+    "quest8": null,
+    "quest9": null,
+    "quest10": null,
+    "criador": null,
+    "dtCriacao": null
+  },
+  "security": {
+    "id": null,
+    "compCod": null,
+    "quest1": null,
+    "quest2": null,
+    "quest3": null,
+    "quest4": null,
+    "quest5": null,
+    "quest6": null,
+    "quest7": null,
+    "quest8": null,
+    "quest9": null,
+    "quest10": null,
+    "criador": null,
+    "dtCriacao": null
+  },
+  "calcFields": {},
+  "calcFieldsSecurity": {},
+  "calcFieldsProperties": {},
+  "headers": {},
+  "errorHandles": {
+    "primaryKey": null,
+    "foreignKey": null
+  },
+  "serviceUrl": "api/cronapi/odata/v2/app/query787492/",
+  "audit": false
+}

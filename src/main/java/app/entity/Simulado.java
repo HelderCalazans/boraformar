@@ -137,6 +137,83 @@ public class Simulado implements Serializable {
         private java.util.Date dtCriacao = Calendar.getInstance().getTime();
 
     /**
+    * @generated
+    */
+    @Column(name = "acertos", nullable = true, unique = false, insertable=true, updatable=true)
+        
+        private java.lang.Integer acertos;
+
+    /**
+    * @generated
+    */
+    @Column(name = "resp1", nullable = true, unique = false, insertable=true, updatable=true)
+        
+        private java.lang.String resp1;
+
+    /**
+    * @generated
+    */
+    @Column(name = "resp2", nullable = true, unique = false, insertable=true, updatable=true)
+        
+        private java.lang.String resp2;
+
+    /**
+    * @generated
+    */
+    @Column(name = "resp3", nullable = true, unique = false, insertable=true, updatable=true)
+        
+        private java.lang.String resp3;
+
+    /**
+    * @generated
+    */
+    @Column(name = "resp4", nullable = true, unique = false, insertable=true, updatable=true)
+        
+        private java.lang.String resp4;
+
+    /**
+    * @generated
+    */
+    @Column(name = "resp5", nullable = true, unique = false, insertable=true, updatable=true)
+        
+        private java.lang.String resp5;
+
+    /**
+    * @generated
+    */
+    @Column(name = "resp6", nullable = true, unique = false, insertable=true, updatable=true)
+        
+        private java.lang.String resp6;
+
+    /**
+    * @generated
+    */
+    @Column(name = "resp7", nullable = true, unique = false, insertable=true, updatable=true)
+        
+        private java.lang.String resp7;
+
+    /**
+    * @generated
+    */
+    @Column(name = "resp8", nullable = true, unique = false, insertable=true, updatable=true)
+        
+        private java.lang.String resp8;
+
+    /**
+    * @generated
+    */
+    @Column(name = "resp9", nullable = true, unique = false, insertable=true, updatable=true)
+        
+        private java.lang.String resp9;
+
+    /**
+    * @generated
+    */
+    @Column(name = "resp10", nullable = true, unique = false, insertable=true, updatable=true)
+        
+        private java.lang.String resp10;
+
+    /**
     * Construtor
     * @generated
     */
@@ -407,6 +484,215 @@ public class Simulado implements Serializable {
     */
     public Simulado setDtCriacao(java.util.Date dtCriacao){
         this.dtCriacao = dtCriacao;
+        return this;
+    }
+    /**
+    * Obtém acertos
+    * return acertos
+    * @generated
+    */
+    
+    public java.lang.Integer getAcertos(){
+        return this.acertos;
+    }
+
+    /**
+    * Define acertos
+    * @param acertos acertos
+    * @generated
+    */
+    public Simulado setAcertos(java.lang.Integer acertos){
+        this.acertos = acertos;
+        return this;
+    }
+    /**
+    * Obtém resp1
+    * return resp1
+    * @generated
+    */
+    
+    public java.lang.String getResp1(){
+        return this.resp1;
+    }
+
+    /**
+    * Define resp1
+    * @param resp1 resp1
+    * @generated
+    */
+    public Simulado setResp1(java.lang.String resp1){
+        this.resp1 = resp1;
+        return this;
+    }
+    /**
+    * Obtém resp2
+    * return resp2
+    * @generated
+    */
+    
+    public java.lang.String getResp2(){
+        return this.resp2;
+    }
+
+    /**
+    * Define resp2
+    * @param resp2 resp2
+    * @generated
+    */
+    public Simulado setResp2(java.lang.String resp2){
+        this.resp2 = resp2;
+        return this;
+    }
+    /**
+    * Obtém resp3
+    * return resp3
+    * @generated
+    */
+    
+    public java.lang.String getResp3(){
+        return this.resp3;
+    }
+
+    /**
+    * Define resp3
+    * @param resp3 resp3
+    * @generated
+    */
+    public Simulado setResp3(java.lang.String resp3){
+        this.resp3 = resp3;
+        return this;
+    }
+    /**
+    * Obtém resp4
+    * return resp4
+    * @generated
+    */
+    
+    public java.lang.String getResp4(){
+        return this.resp4;
+    }
+
+    /**
+    * Define resp4
+    * @param resp4 resp4
+    * @generated
+    */
+    public Simulado setResp4(java.lang.String resp4){
+        this.resp4 = resp4;
+        return this;
+    }
+    /**
+    * Obtém resp5
+    * return resp5
+    * @generated
+    */
+    
+    public java.lang.String getResp5(){
+        return this.resp5;
+    }
+
+    /**
+    * Define resp5
+    * @param resp5 resp5
+    * @generated
+    */
+    public Simulado setResp5(java.lang.String resp5){
+        this.resp5 = resp5;
+        return this;
+    }
+    /**
+    * Obtém resp6
+    * return resp6
+    * @generated
+    */
+    
+    public java.lang.String getResp6(){
+        return this.resp6;
+    }
+
+    /**
+    * Define resp6
+    * @param resp6 resp6
+    * @generated
+    */
+    public Simulado setResp6(java.lang.String resp6){
+        this.resp6 = resp6;
+        return this;
+    }
+    /**
+    * Obtém resp7
+    * return resp7
+    * @generated
+    */
+    
+    public java.lang.String getResp7(){
+        return this.resp7;
+    }
+
+    /**
+    * Define resp7
+    * @param resp7 resp7
+    * @generated
+    */
+    public Simulado setResp7(java.lang.String resp7){
+        this.resp7 = resp7;
+        return this;
+    }
+    /**
+    * Obtém resp8
+    * return resp8
+    * @generated
+    */
+    
+    public java.lang.String getResp8(){
+        return this.resp8;
+    }
+
+    /**
+    * Define resp8
+    * @param resp8 resp8
+    * @generated
+    */
+    public Simulado setResp8(java.lang.String resp8){
+        this.resp8 = resp8;
+        return this;
+    }
+    /**
+    * Obtém resp9
+    * return resp9
+    * @generated
+    */
+    
+    public java.lang.String getResp9(){
+        return this.resp9;
+    }
+
+    /**
+    * Define resp9
+    * @param resp9 resp9
+    * @generated
+    */
+    public Simulado setResp9(java.lang.String resp9){
+        this.resp9 = resp9;
+        return this;
+    }
+    /**
+    * Obtém resp10
+    * return resp10
+    * @generated
+    */
+    
+    public java.lang.String getResp10(){
+        return this.resp10;
+    }
+
+    /**
+    * Define resp10
+    * @param resp10 resp10
+    * @generated
+    */
+    public Simulado setResp10(java.lang.String resp10){
+        this.resp10 = resp10;
         return this;
     }
 
