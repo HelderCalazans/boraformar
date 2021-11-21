@@ -6,7 +6,7 @@
       "apiPath": "src/main/webapp/raml/app/api.raml",
       "attrs": {},
       "chkApi": false,
-      "dataSource": "jdbc/main",
+      "dataSource": "jdbc/BoraFormar1",
       "disableCache": true,
       "id": "paperCell",
       "namespace": "app",

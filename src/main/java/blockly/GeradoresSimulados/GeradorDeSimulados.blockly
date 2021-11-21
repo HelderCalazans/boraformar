@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><blockly audit="false" bpmnAble="false" formTarget="src/main/webapp/views/logged/simulado.view.html" resourceType="JAVA" ruleDescription="GeradorDeSimulados" ruleName="GeradorDeSimulados" ruleSynchronous="false" ruleTimeout="300" ruleType="I" soap="false">
-  <metadata scale="1" scrollx="557.9" scrolly="-214.49999999999812" target="Anb:u5+^,0vLkL9QIqn5"/>
+  <metadata scale="1" scrollx="527.0999999999999" scrolly="-146.1" target="Anb:u5+^,0vLkL9QIqn5"/>
   <block asynccall="false" colour="#995ba5" id="Anb:u5+^,0vLkL9QIqn5" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-427" y="203">
     <mutation>
       <arg name="assunto1"/>
@@ -60,14 +60,14 @@
                 <field customattributes="" name="SELECT">error</field>
                 <value name="MESSAGE">
                   <shadow asynccall="false" colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="apG1fY`*:TalYFEW)1eG" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
-                    <field customattributes="" name="TEXT">Você só pode gerar um simulado com até 10 questões</field>
+                    <field customattributes="" name="TEXT">Você só pode gerar um simulado 10 questões</field>
                   </shadow>
                 </value>
               </block>
             </statement>
             <value name="IF1">
               <block asynccall="false" colour="#5b80a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="PWzCnJ3qYan!5|j6(naZ" origintype="logic_compare" output="true" tooltip="function () { [native code] }" type="logic_compare">
-                <field customattributes="" name="OP">LTE</field>
+                <field customattributes="" name="OP">LT</field>
                 <value name="A">
                   <block asynccall="false" colour="#5b6da5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id=";=BX)Ne:r+5bR,38zUVC" origintype="math_arithmetic" output="true" tooltip="function () { [native code] }" type="math_arithmetic">
                     <mutation items="3"/>
@@ -92,7 +92,7 @@
                 </value>
                 <value name="B">
                   <block asynccall="false" colour="#5b67a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="R713CbmAR$C73}G8Jy?V" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
-                    <field customattributes="" name="NUM">0</field>
+                    <field customattributes="" name="NUM">10</field>
                   </block>
                 </value>
               </block>
@@ -103,7 +103,7 @@
                 <field customattributes="" name="SELECT">error</field>
                 <value name="MESSAGE">
                   <shadow asynccall="false" colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id=",5Q83@?U`|aLoTWyvv1h" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
-                    <field customattributes="" name="TEXT">Seu simulado precisa ter ao menos 1 questão</field>
+                    <field customattributes="" name="TEXT">Você só pode gerar um simulado 10 questões</field>
                   </shadow>
                 </value>
               </block>

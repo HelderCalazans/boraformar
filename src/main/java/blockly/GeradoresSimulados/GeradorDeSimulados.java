@@ -54,14 +54,14 @@ public static Var gerarSimuladoAleatorio(@ParamMetaData(description = "assunto1"
     Var.valueOf(10)) > 0).getObjectAsBoolean()) {
 
         cronapi.util.Operations.callClientFunction( Var.valueOf("cronapi.screen.notify"), Var.valueOf("error"),
-        Var.valueOf("Você só pode gerar um simulado com até 10 questões"));
+        Var.valueOf("Você só pode gerar um simulado 10 questões"));
     } else if (
     Var.valueOf((
     cronapi.math.Operations.sum(qntd1,qntd2,qntd3)).compareTo(
-    Var.valueOf(0)) <= 0).getObjectAsBoolean()) {
+    Var.valueOf(10)) < 0).getObjectAsBoolean()) {
 
         cronapi.util.Operations.callClientFunction( Var.valueOf("cronapi.screen.notify"), Var.valueOf("error"),
-        Var.valueOf("Seu simulado precisa ter ao menos 1 questão"));
+        Var.valueOf("Você só pode gerar um simulado 10 questões"));
     } else {
 
         if (

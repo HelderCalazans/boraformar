@@ -6,18 +6,9 @@ window.blockly.js.blockly.RespondeSimulado = window.blockly.js.blockly.RespondeS
 /**
  * Descreva esta função...
  */
-window.blockly.js.blockly.RespondeSimulado.modaVerificarRespostasArgs = [];
-window.blockly.js.blockly.RespondeSimulado.modaVerificarRespostas = async function() {
-
-  this.cronapi.screen.hideModal("mostraNota");
-}
-
-/**
- * Descreva esta função...
- */
 window.blockly.js.blockly.RespondeSimulado.modalVoltarParaSimuladosArgs = [];
 window.blockly.js.blockly.RespondeSimulado.modalVoltarParaSimulados = async function() {
-
+ var contador, listaT, j, item;
   this.cronapi.screen.changeView("#/home/logged/meussimulados",[  ]);
 }
 
@@ -26,7 +17,7 @@ window.blockly.js.blockly.RespondeSimulado.modalVoltarParaSimulados = async func
  */
 window.blockly.js.blockly.RespondeSimulado.obterIdProvaArgs = [];
 window.blockly.js.blockly.RespondeSimulado.obterIdProva = async function() {
-
+ var contador, listaT, j, item;
   return this.cronapi.screen.getParam('simuladoId');
 }
 
@@ -35,7 +26,7 @@ window.blockly.js.blockly.RespondeSimulado.obterIdProva = async function() {
  */
 window.blockly.js.blockly.RespondeSimulado.verificaQuestoesArgs = [];
 window.blockly.js.blockly.RespondeSimulado.verificaQuestoes = async function() {
-
+ var contador, listaT, j, item;
   contador = 0;
   listaT = [this.cronapi.screen.getValueOfField("vars.q1r1"), this.cronapi.screen.getValueOfField("vars.q1r2"), this.cronapi.screen.getValueOfField("vars.q1r3"), this.cronapi.screen.getValueOfField("vars.q1r4"), this.cronapi.screen.getValueOfField("vars.q2r1"), this.cronapi.screen.getValueOfField("vars.q2r2"), this.cronapi.screen.getValueOfField("vars.q2r3"), this.cronapi.screen.getValueOfField("vars.q2r4"), this.cronapi.screen.getValueOfField("vars.q3r1"), this.cronapi.screen.getValueOfField("vars.q3r2"), this.cronapi.screen.getValueOfField("vars.q3r3"), this.cronapi.screen.getValueOfField("vars.q3r4"), this.cronapi.screen.getValueOfField("vars.q4r1"), this.cronapi.screen.getValueOfField("vars.q4r2"), this.cronapi.screen.getValueOfField("vars.q4r3"), this.cronapi.screen.getValueOfField("vars.q4r4"), this.cronapi.screen.getValueOfField("vars.q5r1"), this.cronapi.screen.getValueOfField("vars.q5r2"), this.cronapi.screen.getValueOfField("vars.q5r3"), this.cronapi.screen.getValueOfField("vars.q5r4"), this.cronapi.screen.getValueOfField("vars.q6r1"), this.cronapi.screen.getValueOfField("vars.q6r2"), this.cronapi.screen.getValueOfField("vars.q6r3"), this.cronapi.screen.getValueOfField("vars.q6r4"), this.cronapi.screen.getValueOfField("vars.q7r1"), this.cronapi.screen.getValueOfField("vars.q7r2"), this.cronapi.screen.getValueOfField("vars.q7r3"), this.cronapi.screen.getValueOfField("vars.q7r4"), this.cronapi.screen.getValueOfField("vars.q8r1"), this.cronapi.screen.getValueOfField("vars.q8r2"), this.cronapi.screen.getValueOfField("vars.q8r3"), this.cronapi.screen.getValueOfField("vars.q8r4"), this.cronapi.screen.getValueOfField("vars.q9r1"), this.cronapi.screen.getValueOfField("vars.q9r2"), this.cronapi.screen.getValueOfField("vars.q9r3"), this.cronapi.screen.getValueOfField("vars.q9r4"), this.cronapi.screen.getValueOfField("vars.q10r1"), this.cronapi.screen.getValueOfField("vars.q10r2"), this.cronapi.screen.getValueOfField("vars.q10r3"), this.cronapi.screen.getValueOfField("vars.q10r4")];
   for (var j_index in listaT) {
@@ -186,6 +177,6 @@ window.blockly.js.blockly.RespondeSimulado.verificaQuestoes = async function() {
  */
 window.blockly.js.blockly.RespondeSimulado.carregaDadosArgs = [];
 window.blockly.js.blockly.RespondeSimulado.carregaDados = async function() {
-
+ var contador, listaT, j, item;
   this.cronapi.screen.load("SimuladosParaResponder");
 }
