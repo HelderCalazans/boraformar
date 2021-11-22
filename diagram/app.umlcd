@@ -7,7 +7,7 @@
       "attrs": {},
       "chkApi": false,
       "dataSource": "jdbc/BoraFormar1",
-      "disableCache": true,
+      "disableCache": false,
       "generationType": "none",
       "id": "paperCell",
       "namespace": "app",
@@ -1740,7 +1740,7 @@
         },
         ".uml-class-attrs-value": {
           "font-size": 11,
-          "ref-x": 119.609375,
+          "ref-x": 119.8814468383789,
           "text": "Texto\nTexto\nAssuntoDisciplina\nTexto\nTexto\nTexto\nTexto\nTexto\nNivelQuestao\n"
         },
         ".uml-class-methods-rect": {
@@ -1804,7 +1804,7 @@
           "name": "descricao",
           "type": "java.lang.String",
           "dbName": "descricao",
-          "dbLength": "",
+          "dbLength": 5000,
           "dbPrecision": "",
           "dbScale": "",
           "dbDefaultValue": "",
@@ -2021,13 +2021,17 @@
           "name": "nivelQuestao",
           "type": "NivelQuestao",
           "dbName": "fk_nivelQuestao",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
           "label": "Nivel Questao",
           "mask": "",
           "isPrimaryKey": false,
           "isUniqueKey": false,
           "isNullable": true,
-          "multitenantContext": "",
           "pkType": "",
+          "multitenantContext": "",
           "jsonIgnore": false,
           "isTransient": false,
           "isInsertable": true,
@@ -2035,8 +2039,14 @@
           "isEncryption": false,
           "referencedColumnName": "",
           "isSearchable": false,
+          "sequence": "",
           "isCascade": false,
-          "isVersion": false
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
         }
       ],
       "generateView": "Auto",
@@ -2055,8 +2065,8 @@
       "role": "Auto",
       "runtimeClass": "cronos.widgets.joint.uml.Class",
       "size": {
-        "height": 184.088623046875,
-        "width": 224.4375
+        "height": 184.4620819091797,
+        "width": 224.78213500976562
       },
       "tableName": "",
       "tableScheme": null,

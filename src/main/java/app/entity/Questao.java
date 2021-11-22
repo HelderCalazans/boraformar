@@ -36,7 +36,7 @@ public class Questao implements Serializable {
     /**
     * @generated
     */
-    @Column(name = "descricao", nullable = true, unique = false, insertable=true, updatable=true)
+    @Column(name = "descricao", nullable = true, unique = false, length=5000, insertable=true, updatable=true)
         
         private java.lang.String descricao;
 
