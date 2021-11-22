@@ -32,12 +32,12 @@
       "condition": "AND",
       "rules": [
         {
-          "id": "u.id",
-          "field": "u.id",
+          "id": "u.normalizedUserName",
+          "field": "u.normalizedUserName",
           "type": "string",
           "input": "text",
           "operator": "equal",
-          "value": ":id",
+          "value": ":normalizedUserName",
           "valueIsField": false
         }
       ],
@@ -51,7 +51,7 @@
   },
   "queryParamsValues": [
     {
-      "fieldName": "id",
+      "fieldName": "normalizedUserName",
       "fieldValue": {
         "type": "server",
         "blocklyMethod": "obterIdUsuarioLog",
@@ -100,6 +100,7 @@
     "afterUpdate": null,
     "afterDelete": null,
     "onNavigate": null,
+    "onAuthorize": null,
     "onError": null
   },
   "defaultValues": {

@@ -4,11 +4,24 @@ window.blockly.js.blockly = window.blockly.js.blockly || {};
 window.blockly.js.blockly.Questao = window.blockly.js.blockly.Questao || {};
 
 /**
+ * Descreva esta função...
+ */
+window.blockly.js.blockly.Questao.limparCamposArgs = [];
+window.blockly.js.blockly.Questao.limparCampos = async function() {
+
+  this.cronapi.screen.changeValueOfField("vars.disciplinaFiltro", '');
+  this.cronapi.screen.changeValueOfField("vars.opt1", 'false');
+  this.cronapi.screen.changeValueOfField("vars.opt2", 'false');
+  this.cronapi.screen.changeValueOfField("vars.opt3", 'false');
+  this.cronapi.screen.changeValueOfField("vars.opt4", 'false');
+}
+
+/**
  * Questao
  */
 window.blockly.js.blockly.Questao.verificaQuestaoCorretaArgs = [];
 window.blockly.js.blockly.Questao.verificaQuestaoCorreta = async function() {
- var contador;
+
   contador = 0;
   if (this.cronapi.screen.getValueOfField("vars.opt1") == 'true') {
     contador = (contador + 1);

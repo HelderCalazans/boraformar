@@ -79,7 +79,7 @@ public static Var gerarSimuladoPorCodigo() throws Exception {
         Var.valueOf("gerarProvaComCodigo"));
 
         cronapi.util.Operations.sleep(
-        Var.valueOf(1));
+        Var.valueOf(2));
     }
 
     cronapi.util.Operations.callClientFunction(Var.valueOf("cronapi.screen.changeView"), Var.valueOf("#/home/logged/meussimulados"));
@@ -96,15 +96,13 @@ public static Var gerarSimuladoPorCodigo() throws Exception {
 public static Var obterIdUsuarioLog() throws Exception {
  return new Callable<Var>() {
 
-   private Var id2 = Var.VAR_NULL;
+   private Var simuladoBase = Var.VAR_NULL;
+   private Var creator = Var.VAR_NULL;
+   private Var e = Var.VAR_NULL;
 
    public Var call() throws Exception {
-
-    id2 =
-    cronapi.list.Operations.getFirst((
-    cronapi.database.Operations.query(Var.valueOf("app.entity.User"),Var.valueOf("select u.id from User u where u.userName = :userName"),Var.valueOf("userName",
-    cronapi.util.Operations.getCurrentUserName()))));
-    return id2;
+    return
+cronapi.util.Operations.getCurrentUserName();
    }
  }.call();
 }
